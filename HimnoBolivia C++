@@ -1,0 +1,23 @@
+// himnobol.cpp : Defines the entry point for the console application.
+//
+
+    #include "stdafx.h"
+	#include <iostream> 
+	#include "conio.h"
+	
+	using namespace std;
+	
+	int main ()
+	{
+    cout << "Bolivianos el hado propicio" << endl;
+    cout << "coronó nuestros votos y anhelos," << endl;
+    cout << "es ya libre, ya libre este suelo," << endl;
+    cout << "ya cesó su servil condición." << endl;
+	
+    cout << "Al estruendo marcial que ayer fuera" << endl;
+    cout << "y al clamor de la guerra horroroso" << endl;
+    cout << "siguen hoy, en contraste armonioso," << endl;
+    cout << "dulces himnos de paz y de unión." << endl;
+    getch ();
+	}
+	
