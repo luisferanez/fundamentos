@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main() 
+{
+	int a,x;
+	cout<<"Ingresar el valor: ";
+	cin>>a;
+	if (a>0)
+		x=a;
+	else 
+		x=-a;
+	cout<<"El valor absoluto de: "<<a<<" es "<<x;
+	getch();
+}
