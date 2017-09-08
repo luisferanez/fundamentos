@@ -1,0 +1,28 @@
+// programa examen.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main(){
+	float x,y,z;
+	cout<<"Ingrese x:"<<endl;
+	cin>>x;
+	cout<<"Ingrese y:"<<endl;
+	cin>>y;
+	z=x*y;
+	if(x>=3)
+	{
+		z=y-(y*0.2);
+	}
+	if(x<=2)
+	{
+		z=y-(y*0.1);
+	}
+	cout<<"Total a pagar:"<<z<<endl;
+	getch();
+}
+
+
