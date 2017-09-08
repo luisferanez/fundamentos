@@ -1,0 +1,24 @@
+// programa examen.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main(){
+	float g,t,p,presupuesto;
+	cout<<"ingrese el presupuesto del hospital:";
+	cin>>presupuesto;
+	if(presupuesto>1000000)
+	{g=presupuesto*0.35;
+	t=presupuesto*0.25;}
+	else{g=presupuesto*0.4;
+	t=presupuesto*0.3;
+	p=presupuesto*0.3;}
+	cout<<"el monto para ginecologia es:" <<g<<endl;
+	cout<<"el monto para traumatologia es:"<<t<<endl;
+	cout<<"el monto para pediatria es:"<<p<<endl;
+	getch();
+}
+
