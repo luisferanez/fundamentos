@@ -1,0 +1,35 @@
+// lfa2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+float serie(float S,int X, int N);
+void main(){
+float S, X, N;
+cout<<"Ingrese el valor de X:";
+cin>>X;
+cout<<"Ingrese el valor de N:";
+cin>>N;
+ cout<<"El valor de la sumatoria de la serie es:"<<S<<endl;
+getch();
+}
+
+float serie(float X, int N){ //DECLARACION DE LA FUNCION
+int I, i, factorial; 
+float S, P; //USAR VARIABLE AUXILIAR DEL MISMO TIPO DE LA SALIDA DE LA FUNCION
+S=(3.1416/5);
+for(I=2;I<=N;I=I+2){
+	factorial=1;
+	for(i=1; i<=I; i++){
+		factorial=factorial*i;
+	}
+	P=pow(X,I)/factorial;
+	P=P*(-1); // cambiando el signo del elemento alternativamente
+	S=S+P;
+}
+return S;
+}
