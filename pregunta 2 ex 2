@@ -1,0 +1,30 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float preciokm(float d ,float dist);
+
+int main()
+{
+  float d,k,precio;
+	cout<<"ingrese los dias de estancia";
+	cin>> d;
+	cout<<"ingrese los kilometros recorridos";
+	cin>>dist;
+	precio=preciokm(d,dist);
+	cout<<"el precio es "<< precio;
+	getch();
+}
+float preciokm(float d ,float dist){
+float billete,p;
+	p=(dist*0.75);
+	if (d>7 && dist>800)
+		billete=(p-(p*0.3));
+	else
+		billete=p;
+	return billete;
+
+}
